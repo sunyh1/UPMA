@@ -23,9 +23,6 @@ class Train():
         self.use_ram = False
 
         netName = 'your_network_name'
-        if self.use_tra:
-            netName = netName + '+tra'
-        # netName = 'ARTSEG-woRAM-g-zsst+tra'
         self.checkpointPath = '/path_to_log/'+netName+'-Log/checkpoint'
         if not os.path.exists(self.checkpointPath):
             os.makedirs(self.checkpointPath)
